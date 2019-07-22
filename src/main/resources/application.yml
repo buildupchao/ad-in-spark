@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    hikari:
+      driver-class-name: com.mysql.jdbc.Driver
+      jdbc-url: jdbc:mysq://localhost:3306/ad-in-spark
+      username: root
+      password: root
+
+  kafka:
+    bootstrap-servers: 192.168.1.105:9092,192.168.1.106:9092,192.168.1.107:9092
+    template:
+      default-topic: AdRealTimeLog
+spark:
+  local: true
+  taskid:
+    session: 2
+    page: 3
+
